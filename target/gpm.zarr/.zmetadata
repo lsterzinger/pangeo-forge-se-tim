@@ -1,0 +1,400 @@
+{
+    "metadata": {
+        ".zattrs": {
+            "BeginTime": "00:00:00.000Z",
+            "DOI": "10.5067/GPM/IMERGDL/DAY/06",
+            "EndTime": "23:59:59.999Z",
+            "title": "GPM IMERG Late Precipitation L3 1 day 0.1 degree x 0.1 degree (GPM_3IMERGDL)"
+        },
+        ".zgroup": {
+            "zarr_format": 2
+        },
+        "HQprecipitation/.zarray": {
+            "chunks": [
+                1,
+                3600,
+                1800
+            ],
+            "compressor": {
+                "blocksize": 0,
+                "clevel": 5,
+                "cname": "lz4",
+                "id": "blosc",
+                "shuffle": 1
+            },
+            "dtype": "<f4",
+            "fill_value": "NaN",
+            "filters": null,
+            "order": "C",
+            "shape": [
+                2,
+                3600,
+                1800
+            ],
+            "zarr_format": 2
+        },
+        "HQprecipitation/.zattrs": {
+            "_ARRAY_DIMENSIONS": [
+                "time",
+                "lon",
+                "lat"
+            ],
+            "coordinates": "time lon lat",
+            "long_name": "Daily accumulated High Quality precipitation from all available MW sources",
+            "units": "mm"
+        },
+        "HQprecipitation_cnt/.zarray": {
+            "chunks": [
+                1,
+                3600,
+                1800
+            ],
+            "compressor": {
+                "blocksize": 0,
+                "clevel": 5,
+                "cname": "lz4",
+                "id": "blosc",
+                "shuffle": 1
+            },
+            "dtype": "|i1",
+            "fill_value": null,
+            "filters": null,
+            "order": "C",
+            "shape": [
+                2,
+                3600,
+                1800
+            ],
+            "zarr_format": 2
+        },
+        "HQprecipitation_cnt/.zattrs": {
+            "_ARRAY_DIMENSIONS": [
+                "time",
+                "lon",
+                "lat"
+            ],
+            "coordinates": "time lon lat",
+            "long_name": "Count of all valid half-hourly HQprecipitation retrievals for the day",
+            "units": "count"
+        },
+        "HQprecipitation_cnt_cond/.zarray": {
+            "chunks": [
+                1,
+                3600,
+                1800
+            ],
+            "compressor": {
+                "blocksize": 0,
+                "clevel": 5,
+                "cname": "lz4",
+                "id": "blosc",
+                "shuffle": 1
+            },
+            "dtype": "|i1",
+            "fill_value": null,
+            "filters": null,
+            "order": "C",
+            "shape": [
+                2,
+                3600,
+                1800
+            ],
+            "zarr_format": 2
+        },
+        "HQprecipitation_cnt_cond/.zattrs": {
+            "_ARRAY_DIMENSIONS": [
+                "time",
+                "lon",
+                "lat"
+            ],
+            "coordinates": "time lon lat",
+            "long_name": "Count of valid half-hourly HQprecipitation retrievals for the day where precipitation is greater than 0",
+            "units": "count"
+        },
+        "lat/.zarray": {
+            "chunks": [
+                1800
+            ],
+            "compressor": {
+                "blocksize": 0,
+                "clevel": 5,
+                "cname": "lz4",
+                "id": "blosc",
+                "shuffle": 1
+            },
+            "dtype": "<f4",
+            "fill_value": "NaN",
+            "filters": null,
+            "order": "C",
+            "shape": [
+                1800
+            ],
+            "zarr_format": 2
+        },
+        "lat/.zattrs": {
+            "_ARRAY_DIMENSIONS": [
+                "lat"
+            ],
+            "long_name": "Latitude",
+            "units": "degrees_north"
+        },
+        "lon/.zarray": {
+            "chunks": [
+                3600
+            ],
+            "compressor": {
+                "blocksize": 0,
+                "clevel": 5,
+                "cname": "lz4",
+                "id": "blosc",
+                "shuffle": 1
+            },
+            "dtype": "<f4",
+            "fill_value": "NaN",
+            "filters": null,
+            "order": "C",
+            "shape": [
+                3600
+            ],
+            "zarr_format": 2
+        },
+        "lon/.zattrs": {
+            "_ARRAY_DIMENSIONS": [
+                "lon"
+            ],
+            "long_name": "Longitude",
+            "units": "degrees_east"
+        },
+        "precipitationCal/.zarray": {
+            "chunks": [
+                1,
+                3600,
+                1800
+            ],
+            "compressor": {
+                "blocksize": 0,
+                "clevel": 5,
+                "cname": "lz4",
+                "id": "blosc",
+                "shuffle": 1
+            },
+            "dtype": "<f4",
+            "fill_value": "NaN",
+            "filters": null,
+            "order": "C",
+            "shape": [
+                2,
+                3600,
+                1800
+            ],
+            "zarr_format": 2
+        },
+        "precipitationCal/.zattrs": {
+            "_ARRAY_DIMENSIONS": [
+                "time",
+                "lon",
+                "lat"
+            ],
+            "coordinates": "time lon lat",
+            "long_name": "Daily accumulated precipitation (combined microwave-IR) estimate",
+            "units": "mm"
+        },
+        "precipitationCal_cnt/.zarray": {
+            "chunks": [
+                1,
+                3600,
+                1800
+            ],
+            "compressor": {
+                "blocksize": 0,
+                "clevel": 5,
+                "cname": "lz4",
+                "id": "blosc",
+                "shuffle": 1
+            },
+            "dtype": "|i1",
+            "fill_value": null,
+            "filters": null,
+            "order": "C",
+            "shape": [
+                2,
+                3600,
+                1800
+            ],
+            "zarr_format": 2
+        },
+        "precipitationCal_cnt/.zattrs": {
+            "_ARRAY_DIMENSIONS": [
+                "time",
+                "lon",
+                "lat"
+            ],
+            "coordinates": "time lon lat",
+            "long_name": "Count of all valid half-hourly precipitationCal retrievals for the day",
+            "units": "count"
+        },
+        "precipitationCal_cnt_cond/.zarray": {
+            "chunks": [
+                1,
+                3600,
+                1800
+            ],
+            "compressor": {
+                "blocksize": 0,
+                "clevel": 5,
+                "cname": "lz4",
+                "id": "blosc",
+                "shuffle": 1
+            },
+            "dtype": "|i1",
+            "fill_value": null,
+            "filters": null,
+            "order": "C",
+            "shape": [
+                2,
+                3600,
+                1800
+            ],
+            "zarr_format": 2
+        },
+        "precipitationCal_cnt_cond/.zattrs": {
+            "_ARRAY_DIMENSIONS": [
+                "time",
+                "lon",
+                "lat"
+            ],
+            "coordinates": "time lon lat",
+            "long_name": "Count of valid half-hourly precipitationCal retrievals for the day where precipitation is greater than 0",
+            "units": "count"
+        },
+        "randomError/.zarray": {
+            "chunks": [
+                1,
+                3600,
+                1800
+            ],
+            "compressor": {
+                "blocksize": 0,
+                "clevel": 5,
+                "cname": "lz4",
+                "id": "blosc",
+                "shuffle": 1
+            },
+            "dtype": "<f4",
+            "fill_value": "NaN",
+            "filters": null,
+            "order": "C",
+            "shape": [
+                2,
+                3600,
+                1800
+            ],
+            "zarr_format": 2
+        },
+        "randomError/.zattrs": {
+            "_ARRAY_DIMENSIONS": [
+                "time",
+                "lon",
+                "lat"
+            ],
+            "coordinates": "time lon lat",
+            "long_name": "Daily total error of precipitation estimate",
+            "units": "mm"
+        },
+        "randomError_cnt/.zarray": {
+            "chunks": [
+                1,
+                3600,
+                1800
+            ],
+            "compressor": {
+                "blocksize": 0,
+                "clevel": 5,
+                "cname": "lz4",
+                "id": "blosc",
+                "shuffle": 1
+            },
+            "dtype": "|i1",
+            "fill_value": null,
+            "filters": null,
+            "order": "C",
+            "shape": [
+                2,
+                3600,
+                1800
+            ],
+            "zarr_format": 2
+        },
+        "randomError_cnt/.zattrs": {
+            "_ARRAY_DIMENSIONS": [
+                "time",
+                "lon",
+                "lat"
+            ],
+            "coordinates": "time lon lat",
+            "long_name": "Count of valid half-hourly randomError retrievals for the day",
+            "units": "count"
+        },
+        "time/.zarray": {
+            "chunks": [
+                1
+            ],
+            "compressor": {
+                "blocksize": 0,
+                "clevel": 5,
+                "cname": "lz4",
+                "id": "blosc",
+                "shuffle": 1
+            },
+            "dtype": "<f8",
+            "fill_value": "NaN",
+            "filters": null,
+            "order": "C",
+            "shape": [
+                2
+            ],
+            "zarr_format": 2
+        },
+        "time/.zattrs": {
+            "_ARRAY_DIMENSIONS": [
+                "time"
+            ],
+            "bounds": "time_bnds",
+            "calendar": "julian",
+            "standard_name": "time",
+            "units": "days since 1970-01-01T00:00:00+00:00"
+        },
+        "time_bnds/.zarray": {
+            "chunks": [
+                1,
+                2
+            ],
+            "compressor": {
+                "blocksize": 0,
+                "clevel": 5,
+                "cname": "lz4",
+                "id": "blosc",
+                "shuffle": 1
+            },
+            "dtype": "<f8",
+            "fill_value": "NaN",
+            "filters": null,
+            "order": "C",
+            "shape": [
+                2,
+                2
+            ],
+            "zarr_format": 2
+        },
+        "time_bnds/.zattrs": {
+            "_ARRAY_DIMENSIONS": [
+                "time",
+                "nv"
+            ],
+            "calendar": "julian",
+            "coordinates": "time nv",
+            "units": "days since 1970-01-01T00:00:00+00:00"
+        }
+    },
+    "zarr_consolidated_format": 1
+}

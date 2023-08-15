@@ -1,0 +1,10 @@
+{
+    "_ARRAY_DIMENSIONS": [
+        "time",
+        "lon",
+        "lat"
+    ],
+    "coordinates": "time lon lat",
+    "long_name": "Daily accumulated High Quality precipitation from all available MW sources",
+    "units": "mm"
+}
