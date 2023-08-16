@@ -10,6 +10,9 @@ Go to: https://tinyurl.com/pangeo-forge-se-tim-register to submit your GitHub us
 3. View or change the provenance file ```feedstock/meta.yaml```.
 4. In the JupyterHub, open a terminal and navigate to the directory 
 ```cd pangeo-forge-se-tim/```
-5. In the terminal run pangeo-forge with the following command. The ```job_name``` should match the ``id`` provided in the ```meta.yaml``` file:
-```pangeo-forge-runner bake --repo=. --Bake.job_name="gpm-zarr" --prune```
+5. In the terminal run pangeo-forge with the following command. The ```job_name``` and ```recipe_id``` should match the ``id`` provided in the ```meta.yaml``` file:
+   
+    ```
+    pangeo-forge-runner bake --repo=. --Bake.job_name="gpm-zarr" --Bake.recipe_id="gpm-zarr" --prune
+    ```
 
