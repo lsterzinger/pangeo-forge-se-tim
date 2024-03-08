@@ -1,0 +1,5 @@
+xarray
+fsspec
+kerchunk
+pangeo-forge-cmr
+pangeo-forge-recipes
